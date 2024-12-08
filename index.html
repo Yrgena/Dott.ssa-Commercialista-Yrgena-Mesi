@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <!-- Verifica Google Search Console -->
+  <meta name="google-site-verification" content="NwRr_fnk4bJ_4PkIR3htem6MrHGWL0Eem7wBjUk7SCQ" />
+
+  <!-- Metadati di base -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Dott.ssa Commercialista Yrgena Mesi - Servizi fiscali e contabili su misura a Santa Sofia (FC). Prenota ora una consulenza personalizzata.">
   <title>Dott.ssa Yrgena Mesi - Commercialista</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stile generale -->
   <style>
-    /* Stile generale */
     body {
       font-family: 'Poppins', Arial, sans-serif;
       margin: 0;
@@ -14,139 +22,118 @@
       background: linear-gradient(135deg, #003366, #66b3ff);
       color: #333;
     }
-    h1, h2 {
-      font-family: 'Merriweather', serif;
-    }
+
+    /* Header */
     header {
       text-align: center;
       padding: 50px 20px;
       color: #fff;
-      background: rgba(0, 0, 0, 0.6);
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 0;
+      background-color: #003366;
     }
 
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 3.5em;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      max-width: 300px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+      border-radius: 15px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Container */
     .container {
       max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
-    }
-    .section {
-      margin-bottom: 50px;
-    }
-    .section h2 {
-      color: #003366;
-      margin-bottom: 20px;
-      font-size: 2em;
+      text-align: center;
     }
 
-    /* Sezioni con immagini e testo */
-    .intro, .cta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 20px;
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .intro img, .cta img {
-      max-width: 45%;
-      border-radius: 10px;
-    }
-    .intro div, .cta div {
-      max-width: 50%;
-      padding: 10px;
-    }
-    .cta {
-      background: linear-gradient(135deg, #66b3ff, #003366);
-      color: #fff;
-    }
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #fff;
-      color: #003366;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 1.1em;
-      font-weight: bold;
+    /* Sezioni */
+    .services, .why-choose {
+      margin-top: 40px;
+      text-align: left;
     }
 
-    /* Sezione servizi */
-    .services ul {
+    .services ul, .why-choose ul {
       list-style-type: none;
       padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
     }
-    .services li {
+
+    .services li, .why-choose li {
+      margin-bottom: 10px;
+      font-size: 1.2em;
       background: #fff;
       padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      font-size: 1.1em;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Immagini */
+    .container img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 15px;
+      margin-top: 20px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Contatti */
+    .contact {
+      margin-top: 40px;
       text-align: center;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.8);
-      font-size: 0.9em;
-    }
-    footer a {
-      color: #66b3ff;
+    .contact a {
+      color: #003366;
+      font-weight: bold;
       text-decoration: none;
     }
 
-    /* Responsività */
-    @media (max-width: 768px) {
-      .intro img, .cta img {
-        max-width: 100%;
-      }
-      .intro div, .cta div {
-        max-width: 100%;
-      }
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <h1>Dott.ssa Commercialista Yrgena Mesi</h1>
+    <img src="https://i.ibb.co/1nwy6qH/Clipped-image-20241206-104136.png" alt="Foto Yrgena Mesi">
+    <p>Gestione fiscale e contabile su misura per ogni esigenza.</p>
+  </header>
 
-<header>
-  <h1>Dott.ssa Yrgena Mesi</h1>
-  <p>Gestione fiscale e contabile su misura: semplicità e affidabilità per ogni esigenza.</p>
-</header>
+  <!-- Introduzione -->
+  <div class="container">
+    <h2>Benvenuti</h2>
+    <p>Mi chiamo Yrgena Mesi, dottoressa commercialista. Offro un supporto qualificato e trasparente per privati, professionisti e aziende, semplificando ogni aspetto della gestione fiscale e contabile con un approccio personalizzato e aggiornato.</p>
+  </div>
 
-<div class="container">
-  <!-- Intro Section -->
-  <section class="section intro">
-    <div>
-      <h2>Benvenuti</h2>
-      <p>
-        Mi chiamo Yrgena Mesi, dottoressa commercialista. Offro un supporto qualificato e trasparente 
-        per privati, professionisti e aziende, semplificando ogni aspetto della gestione fiscale e contabile 
-        con un approccio personalizzato e aggiornato.
-      </p>
-    </div>
-    <img 
-src=" https://i.ibb.co/zZv4gD4/Clipped-image-20241206-104136.png" alt="Dott.ssa Yrgena Mesi">
-  </section>
+  <!-- Perché scegliere il mio studio -->
+  <div class="container why-choose">
+    <h2>Perché scegliere il mio studio?</h2>
+    <ul>
+      <li><strong>Dedizione e disponibilità:</strong> Mi impegno a offrire un servizio accurato, ascoltando con attenzione ogni esigenza del cliente.</li>
+      <li><strong>Approccio personalizzato:</strong> Ogni cliente è unico. Lavoro con te per trovare le soluzioni più adatte alle tue necessità.</li>
+      <li><strong>Aggiornamento continuo:</strong> Mi tengo costantemente aggiornata sulle normative per offrirti un servizio moderno e competente.</li>
+      <li><strong>Chiarezza e semplicità:</strong> Spiego ogni passaggio in modo chiaro, rendendo il processo semplice e senza stress.</li>
+    </ul>
+  </div>
 
-  <!-- Services Section -->
-  <section class="section services">
-    <h2>Servizi offerti</h2>
+  <!-- Servizi Offerti -->
+  <div class="container services">
+    <h2>Servizi Offerti</h2>
     <ul>
       <li>Dichiarazioni dei redditi e pratiche fiscali</li>
       <li>Contabilità per aziende e professionisti</li>
@@ -155,30 +142,19 @@ src=" https://i.ibb.co/zZv4gD4/Clipped-image-20241206-104136.png" alt="Dott.ssa 
       <li>Assistenza in fase di controllo fiscale</li>
       <li>Servizi amministrativi e burocratici</li>
     </ul>
-  </section>
+  </div>
 
-  <!-- Call to Action Section -->
-  <section class="section cta">
-    <div>
-      <h2>Contattami oggi stesso</h2>
-      <p>
-        Prenota ora il tuo appuntamento e scopri come posso aiutarti nella gestione fiscale e amministrativa.  
-      </p>
-      <p>
-        📩 <strong>Email:</strong> <a href="mailto:Yrgenam@gmail.com" style="color: #fff;">Yrgenam@gmail.com</a><br>
-        📞 <strong>Telefono:</strong> 3493845553<br>
-        📍 <strong>Indirizzo:</strong> Via Nicolò Gentili n. 5, Santa Sofia (FC)
-      </p>
-      <a href="mailto:Yrgenam@gmail.com">Prenota ora il tuo appuntamento</a>
-    </div>
-    <img src="https://i.ibb.co/NTmcXCk/Clipped-image-20241206-104046.png" alt="Dott.ssa Yrgena Mesi">
-  </section>
-</div>
+  <!-- Immagine prima di Contattami -->
+  <div class="container">
+    <img src="https://i.ibb.co/NTmcXCk/Clipped-image-20241206-104046.png" alt="Yrgena Mesi al lavoro">
+  </div>
 
-<footer>
-  <p>© 2024 Dott.ssa Yrgena Mesi | Orari: Lunedì - Venerdì, 9:00 - 17:00</p>
-  <p>Seguimi su Instagram: <a href="https://www.instagram.com/Dott.ssaCommercialistaYrgenaMesi" target="_blank">@Dott.ssaCommercialistaYrgenaMesi</a></p>
-</footer>
-
+  <!-- Contatti -->
+  <div class="container contact">
+    <h2>Contattami</h2>
+    <p>Email: <a href="mailto:Yrgenam@gmail.com">Yrgenam@gmail.com</a></p>
+    <p>Telefono: 3493845553</p>
+    <p>Indirizzo: Via Nicolò Gentili n. 5, Santa Sofia (FC)</p>
+  </div>
 </body>
 </html>
